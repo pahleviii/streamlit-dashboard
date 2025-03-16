@@ -1,35 +1,58 @@
-# Dashboard Streamlit untuk Analisis Data
+# 📊 Dashboard Analisis Data dengan Streamlit
 
-Proyek ini menyediakan **dashboard Streamlit** untuk menganalisis dan memvisualisasikan data produk dari dataset Olist.
+## 📝 Deskripsi
+Dashboard ini dibuat menggunakan **Streamlit** untuk menganalisis dataset terkait pesanan dan produk. Visualisasi data dilakukan dengan bantuan pustaka **pandas**, **matplotlib**, dan **seaborn**.
 
-## 📌 Fitur
-1. **Statistik Deskriptif**: Menampilkan nilai rata-rata, median, standar deviasi, nilai minimum, dan maksimum untuk kolom numerik.
-2. **Rata-rata Panjang Deskripsi Produk**: Grafik batang yang menunjukkan hubungan antara jumlah foto produk dan panjang deskripsinya.
-3. **Analisis Berat Produk**: Mengidentifikasi kategori dengan berat rata-rata tertinggi dan menampilkan distribusi beratnya.
+## 🚀 Instalasi dan Menjalankan Dashboard
+Ikuti langkah-langkah berikut untuk menjalankan dashboard secara lokal:
 
-## 📂 File
-- `dashboard.py`: Skrip utama untuk menjalankan dashboard Streamlit.
-- `requirements.txt`: Daftar pustaka Python yang dibutuhkan.
-- `olist_products_dataset.csv`: Dataset produk.
-- `olist_orders_dataset.csv`: Dataset pesanan.
+### 1️⃣ Clone Repository
+```bash
+git clone https://github.com/username/repository-name.git
+cd repository-name
+```
+Gantilah `username` dan `repository-name` dengan nama pengguna dan repositori GitHub Anda.
 
-## 🚀 Cara Menjalankan
-1. Instal dependensi:
-   ```sh
-   pip install -r requirements.txt
-   ```
-2. Jalankan aplikasi Streamlit:
-   ```sh
-   streamlit run dashboard.py
-   ```
+### 2️⃣ Buat Virtual Environment (Opsional)
+```bash
+python -m venv venv
+source venv/bin/activate  # Untuk macOS/Linux
+venv\Scripts\activate    # Untuk Windows
+```
 
-## 📊 Informasi Dataset
-Dataset ini berisi data terkait produk seperti nama kategori, berat produk, dan panjang deskripsi. Data ini digunakan untuk menghasilkan wawasan dan visualisasi dalam dashboard ini.
+### 3️⃣ Instal Dependencies
+```bash
+pip install -r requirements.txt
+```
 
-## 🛠 Pustaka yang Digunakan
-- `pandas` untuk manipulasi data
-- `matplotlib` dan `seaborn` untuk visualisasi data
-- `streamlit` untuk membangun dashboard interaktif
+### 4️⃣ Jalankan Streamlit
+```bash
+streamlit run dashboard.py
+```
+
+## 📂 Struktur Folder
+```
+/
+│-- dashboard.py            # File utama dashboard Streamlit
+│-- proyek_analisis_data.py # Script analisis data
+│-- requirements.txt        # Daftar pustaka yang dibutuhkan
+│-- data/
+│   ├── olist_orders_dataset.csv
+│   ├── olist_products_dataset.csv
+│-- README.md               # Dokumentasi ini
+```
+
+## 🔧 Fitur Dashboard
+✅ Menampilkan informasi dataset
+✅ Visualisasi data dengan grafik interaktif
+✅ Filter dan eksplorasi data dengan widget Streamlit
+
+## 🤝 Kontribusi
+Jika ingin berkontribusi, silakan buat **pull request** atau buka **issue** di repositori ini.
+
+## 📜 Lisensi
+Proyek ini menggunakan lisensi **MIT**.
 
 ---
-**Dikembangkan dengan ❤️ menggunakan Streamlit.**
+💡 **Dibuat dengan ❤️ menggunakan Python & Streamlit**
+
